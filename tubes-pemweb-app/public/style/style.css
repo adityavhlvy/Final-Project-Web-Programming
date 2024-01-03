@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* GENERAL STYLE, Mobile version style*/
+
+/* ===start navbar ===*/
+.navbar-brand {
+    font-size: 32px;
+    font-weight: 700;
+}
+.navbar-brand:hover {
+    color: white;
+}
+/*=== end navbar ===*/
+
+/* === start jumbotron === */
+.jumbotron {
+    background-color: #0D1B2B;
+    height: 540px;
+    text-align: center;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 42px;
+}
+.jumbotron .display-4 span {
+    font-size: 27px;
+}
+.jumbotron .lead {
+    color: white;
+}
+/* === end jumbotron === */
+
+/* === start form pengaduan === */
+
+.form-pengaduan{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 12px;
+    margin-top: -160px;
+    padding: 30px;
+}
+
+.btn-adu {
+    background-color: #0D1B2B;
+    color: white;
+}
+.btn-adu:hover {
+    background-color: #272e36;
+    color: white;
+}
+
+/* === end form pengaduan === */
+
+/*===END GENERAL STYLE, Mobile version style===*/
+
+
+/* === desktop version style ===*/
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link {
+        margin-right: 25px;
+    }
+    .nav-link:hover{
+        color: white;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        background-color: #0D1B2B;
+        margin-top: -75px;
+        height: 640px;
+    }
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+}
+/* === desktop mode style */
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.services .card-body i{
+    font-size: 50px;
+}
+  
+footer {
+    background-color: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.w-100{
+    height: 100vh;
+}

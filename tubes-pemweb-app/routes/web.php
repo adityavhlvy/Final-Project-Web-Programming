@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -9,11 +9,16 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
-    return view('home', ["title" => "Home"]);
+    return view('homepage', ["title" => "Home"]);
 });
-Route::get('/login', [LoginController::class, 'showLoginForm']);
+Route::get('/session', [SessionController::class, 'index']);
+Route::get('/form-pengaduan', function(){
+    return view('formngadu',["title" => "Ngadu"]);
+});
+Route::post('/session/login', [SessionController::class, 'login']);
