@@ -1,79 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
-/* GENERAL STYLE, Mobile version style*/
-
-/* ===start navbar ===*/
-.navbar-brand {
-    font-size: 32px;
-    font-weight: 700;
-}
-.navbar-brand:hover {
-    color: white;
-}
-/*=== end navbar ===*/
-
-/* === start jumbotron === */
-.jumbotron {
-    background-color: #0D1B2B;
-    height: 540px;
-    text-align: center;
-}
-
-.jumbotron .display-4 {
-    color: white;
-    margin-top: 150px;
-    font-weight: 200;
-    font-size: 42px;
-}
-.jumbotron .display-4 span {
-    font-size: 27px;
-}
-.jumbotron .lead {
-    color: white;
-}
-/* === end jumbotron === */
-
-/* === start form pengaduan === */
-
-.form-pengaduan{
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    background-color: white;
-    border-radius: 12px;
-    margin-top: -160px;
-    padding: 30px;
-}
-
-.btn-adu {
-    background-color: #0D1B2B;
-    color: white;
-}
-.btn-adu:hover {
-    background-color: #272e36;
-    color: white;
-}
-
-/* === end form pengaduan === */
-
-/*===END GENERAL STYLE, Mobile version style===*/
-
-
-/* === desktop version style ===*/
-@media (min-width: 992px) {
-    .navbar-brand, .nav-link {
+@media (min-width: 568px) {
+    .navbar {
+        height: 10vh;
+    }
+    .navbar-brand {
+        font-family: "Viga", sans-serif;
+        font-size: 32px;
+    }
+    .navbar-brand,
+    .nav-link {
         color: white;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     }
     .nav-link {
         margin-right: 25px;
     }
-    .nav-link:hover{
+    .nav-link:hover {
         color: white;
     }
-    .nav-link:hover::after{
-        content: '';
+    .nav-link:hover::after {
+        content: "";
         display: block;
         border-bottom: 3px solid #0b63dc;
         width: 50%;
@@ -82,61 +31,175 @@
         margin-bottom: -8px;
     }
     .jumbotron {
-        background-color: #0D1B2B;
+        height: 55vh;
+    }
+    .jumbotron .container {
+        text-align: center;
+        align-items: center;
+    }
+    .jumbotron .button {
+        margin-top: 30px;
+    }
+    .image-wrapper {
+        height: 10vw;
+        margin: 0 auto;
+    }
+    .card {
+        margin: 0 0.5em;
+        width: calc(100% / 3);
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+        border-radius: 0;
+    }
+    /* === Form Pengaduan === */
+    .jumbotron-formaduan {
+        background-color: #0d1b2b;
         margin-top: -75px;
         height: 640px;
     }
-    .jumbotron .display-4 {
+    .jumbotron-formaduan .display-4 {
         font-size: 62px;
     }
 }
-/* === desktop mode style */
-
-.section-padding{
-    padding: 100px 0;
-}
-.carousel-item{
-    height: 100vh;
-    min-height: 300px;
-}
-.carousel-caption{
-    bottom: 220px;
-    z-index: 2;
-}
-.carousel-caption h5 {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-}
-.carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9;
-}
-.carousel-inner::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+@media screen and (max-width: 567px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+    .jumbotron {
+        height: 40vh;
+    }
 }
 
-.services .card-body i{
-    font-size: 50px;
+.carousel-inner {
+    padding: 1em;
 }
-  
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navbar {
+    background-color: #0d1b2b;
+    color: white;
+}
+.navbar-brand {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+.navbar-brand:hover {
+    color: white;
+}
+
+.jumbotron {
+    background-color: #0d1b2b;
+    align-items: start;
+}
+
 footer {
-    background-color: #0d1b2a;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    background-color: #0d1b2b;
 }
 
-.w-100{
-    height: 100vh;
+/* === Form Pengaduan ===*/
+.jumbotron-formaduan {
+    background-color: #0d1b2b;
+    height: 540px;
+    text-align: center;
+}
+
+.jumbotron-formaduan .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 42px;
+}
+.jumbotron-formaduan .display-4 span {
+    font-size: 27px;
+}
+.jumbotron-formaduan .lead {
+    color: white;
+}
+
+.form-pengaduan {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 12px;
+    margin-top: -160px;
+    padding: 30px;
+}
+
+.btn-adu {
+    background-color: #0d1b2b;
+    color: white;
+}
+.btn-adu:hover {
+    background-color: #272e36;
+    color: white;
+}
+
+.session-form {
+    height: 70vh;
+}
+.session-form .card {
+    width: 400px;
+    border: none;
+}
+
+.session-form .btr {
+    border-top-right-radius: 5px !important;
+}
+
+.session-form .btl {
+    border-top-left-radius: 5px !important;
+}
+
+.session-form .btn-dark {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.session-form .btn-dark:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.session-form .nav-pills {
+    display: table !important;
+    width: 100%;
+}
+
+.session-form .nav-pills .nav-link {
+    border-radius: 0px;
+    border-bottom: 1px solid #0d6efd40;
+}
+
+.session-form .nav-item {
+    display: table-cell;
+    background: #0d6efd2e;
+}
+
+.session-form .form {
+    padding: 10px;
+    height: 300px;
+}
+
+.session-form .form input {
+    margin-bottom: 12px;
+    border-radius: 3px;
+}
+
+.session-form .form input:focus {
+    box-shadow: none;
+}
+
+.session-form .form button {
+    margin-top: 20px;
 }
