@@ -1,0 +1,220 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+.debug {
+    border: 1px solid red;
+}
+.debug-green {
+    border: 1px solid green;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-family: "Viga", sans-serif;
+        font-size: 32px;
+    }
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .navbar .nav-link {
+        margin-right: 25px;
+    }
+    .navbar .nav-link:hover {
+        color: white;
+    }
+    .navbar .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .account {
+        margin-right: 25px;
+        background-color: #0d1b2b;
+    }
+    .jumbotron {
+        height: 55vh;
+    }
+    .jumbotron .container {
+        text-align: center;
+        align-items: center;
+    }
+    .jumbotron .button {
+        margin-top: 30px;
+    }
+    .image-wrapper {
+        height: 10vw;
+        margin: 0 auto;
+    }
+    .card {
+        margin: 0 0.5em;
+        width: calc(100% / 3);
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+        border-radius: 0;
+    }
+    /* === Form Pengaduan === */
+    .jumbotron-formaduan {
+        background-color: #0d1b2b;
+        height: 640px;
+    }
+    .jumbotron-formaduan .display-4 {
+        font-size: 62px;
+    }
+    .form-pengaduan {
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        border-radius: 12px;
+        margin-top: -160px;
+        padding: 30px;
+    }
+    .laporan-section h1{
+        text-align: center;
+    }
+
+}
+/* phone */
+@media (max-width: 991.98px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+    .jumbotron {
+        height: 40vh;
+    }
+    /* === Form Pengaduan ===*/
+    .form-pengaduan {
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        border-radius: 12px;
+        margin-top: 0px;
+        padding: 30px;
+    }
+}
+.carousel-section {
+    text-align: center;
+    height: auto;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.navbar {
+    background-color: #0d1b2b;
+    color: white;
+    margin-top: -30px;
+    height: 10vh;
+}
+.navbar-brand {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+.navbar-brand:hover {
+    color: white;
+}
+.jumbotron {
+    height: 50vh;
+    background-color: #0d1b2b;
+    align-items: start;
+}
+footer {
+    background-color: #0d1b2b;
+    height: 15vh;
+}
+
+/* === Form Pengaduan ===*/
+.jumbotron-formaduan {
+    background-color: #0d1b2b;
+    height: 540px;
+    text-align: center;
+}
+
+.jumbotron-formaduan .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 42px;
+}
+.jumbotron-formaduan .display-4 span {
+    font-size: 27px;
+}
+.jumbotron-formaduan .lead {
+    color: white;
+}
+
+.btn-adu {
+    background-color: #0d1b2b;
+    color: white;
+}
+.btn-adu:hover {
+    background-color: #272e36;
+    color: white;
+}
+
+
+.user-complaints-section, .user-profile-section, .user-registered-section , .laporan-card{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 30px;
+}
+.form-signin{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+.bi {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -0.125em;
+    color: #0b63dc;
+    border: 1px solid red;
+}
+
+.sidebar .nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.sidebar .nav-link {
+    color: #0d1b2b;
+    font-size: 1rem;
+}
+.sidebar .nav-link i {
+    margin-right: 10px;
+    width: 22px;
+}
+
+.kategori-populer {
+    border: 1px solid aqua;
+    border-radius: 12px;
+    margin: auto;
+    /* height: 50vh; */
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
